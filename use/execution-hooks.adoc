@@ -1,0 +1,151 @@
+---
+sidebar: sidebar 
+permalink: use/execution-hooks.html 
+keywords: execution hook, snapshot, hook, kubernetes, astra control, astra 
+summary: Ein Execution Hook ist ein benutzerdefiniertes Skript, das Sie vor oder nach einem Snapshot einer verwalteten App ausführen können. 
+---
+= Anwendungsausführungshaken verwalten
+:hardbreaks:
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/use/
+
+
+[role="lead"]
+Ein Execution Hook ist ein benutzerdefiniertes Skript, das Sie vor oder nach einem Snapshot einer verwalteten App ausführen können. Wenn Sie beispielsweise über eine Datenbank-App verfügen, können Sie mithilfe von Testsuiten alle Datenbanktransaktionen vor dem Snapshot anhalten und die Transaktionen nach Abschluss des Snapshots fortsetzen. Dies gewährleistet applikationskonsistente Snapshots.
+
+
+
+== Standard-Ausführungshaken und reguläre Ausdrücke
+
+Für einige Applikationen verfügt Astra Control über Standard-Testhooks von NetApp, die für Frost- und Thaw-Vorgänge vor und nach Snapshots sorgen. Astra Control verwendet regelmäßige Ausdrücke, um das Container-Image einer App mit diesen Apps zu kombinieren:
+
+* MariaDB
++
+** Übereinstimmende reguläre Ausdrücke: \Bmariadb\b
+
+
+* MySQL
++
+** Übereinstimmende reguläre Ausdrücke: \Bmysql\b
+
+
+* PostgreSQL
++
+** Übereinstimmende reguläre Ausdrücke: \Bpostgresql\b
+
+
+
+
+Bei Übereinstimmung werden die von NetApp bereitgestellten Standard-Testsuite für die Applikation in der Liste der aktiven Testhooks der Applikation angezeigt. Die Haken werden automatisch ausgeführt, wenn Snapshots der App erstellt werden. Wenn eine Ihrer benutzerdefinierten Apps einen ähnlichen Bildnamen hat, der mit einem der regulären Ausdrücke übereinstimmt (und Sie nicht die standardmäßigen Testsuiten verwenden möchten), können Sie entweder den Bildnamen ändern. Oder deaktivieren Sie den Standard-Testsuite-Haken für diese App und verwenden Sie stattdessen einen benutzerdefinierten Haken.
+
+Sie können die standardmäßigen Testsuiten nicht löschen oder ändern.
+
+
+
+== Wichtige Hinweise zu benutzerdefinierten Testausführungshaken
+
+Bei der Planung von Testausführungshooks für Ihre Apps sollten Sie Folgendes berücksichtigen:
+
+* Astra Control erfordert das Schreiben von Testsuiten im Format ausführbarer Shell-Skripte.
+* Die Skriptgröße ist auf 128 KB beschränkt.
+* Astra Control verwendet die Einstellungen für Testausführungshaken und die zugehörigen Kriterien, um zu bestimmen, welche Haken für einen Snapshot gelten.
+* Bei allen Verbindungsausfällen handelt es sich um weiche Fehler. Andere Haken und der Snapshot werden immer noch versucht, auch wenn ein Haken ausfällt. Wenn ein Haken jedoch ausfällt, wird ein Warnereignis im Ereignisprotokoll der Seite * aufgezeichnet.
+* Um Testsuiten zu erstellen, zu bearbeiten oder zu löschen, müssen Sie Benutzer mit den Berechtigungen Eigentümer, Administrator oder Mitglied sein.
+* Wenn ein Execution Hook länger als 25 Minuten dauert, schlägt der Hook fehl und erstellt einen Ereignisprotokolleintrag mit einem Rückgabecode von „N/A“. Jeder betroffene Snapshot wird als fehlgeschlagen markiert, und ein resultierender Eintrag im Ereignisprotokoll weist auf das Timeout hin.
+
+
+
+NOTE: Da die Testsuitehingel die Funktionalität der Anwendung, für die sie ausgeführt werden, oft reduzieren oder vollständig deaktivieren, sollten Sie immer versuchen, die Zeit zu minimieren, die Ihre benutzerdefinierten Testausführungshaken für die Ausführung benötigt.
+
+Wenn ein Snapshot ausgeführt wird, finden Ereignisse zum Ausführen von Testinsuiten in der folgenden Reihenfolge statt:
+
+. Auf den entsprechenden Containern werden alle relevanten, von NetApp zur Verfügung gestellten Standard-Hooks für die Snapshot-Ausführung ausgeführt.
+. Alle entsprechenden benutzerdefinierten Hooks für die vor-Snapshot-Ausführung werden auf den entsprechenden Containern ausgeführt. Sie können beliebig viele benutzerdefinierte Pre-Snapshot Hooks erstellen und ausführen, aber die Reihenfolge der Ausführung dieser Hooks vor dem Snapshot ist weder garantiert noch konfigurierbar.
+. Der Snapshot wird durchgeführt.
+. Alle entsprechenden benutzerdefinierten Hooks für die Ausführung nach dem Snapshot werden auf den entsprechenden Containern ausgeführt. Sie können beliebig viele benutzerdefinierte Haken für die Nachbearbeitung erstellen und ausführen, aber die Reihenfolge der Ausführung dieser Hooks nach dem Snapshot ist weder garantiert noch konfigurierbar.
+. Auf den entsprechenden Containern werden alle relevanten, von NetApp bereitgestellten Standard-Hooks für die Nachbearbeitung ausgeführt.
+
+
+
+NOTE: Sie sollten Ihre Hook-Skripte immer testen, bevor Sie sie in einer Produktionsumgebung aktivieren. Mit dem Befehl 'kubectl exec' können Sie die Skripte bequem testen. Nachdem Sie die Testausführungshaken in einer Produktionsumgebung aktiviert haben, testen Sie die erstellten Snapshots, um sicherzustellen, dass sie konsistent sind. Dazu klonen Sie die Applikation in einem temporären Namespace, stellen den Snapshot wieder her und testen anschließend die App.
+
+
+
+== Vorhandene Testsuiten anzeigen
+
+Sie können vorhandene benutzerdefinierte oder von NetApp bereitgestellte Standard-Testhooks für eine App anzeigen.
+
+.Schritte
+. Gehen Sie zu *Anwendungen* und wählen Sie dann den Namen einer verwalteten App aus.
+. Wählen Sie die Registerkarte *Testsuitehaschen* aus.
++
+In der Ergebnisliste können Sie alle aktivierten oder deaktivierten Testausführungshaken anzeigen. Sie können den Status, die Quelle und die Ausführung eines Hakens (vor oder nach dem Schnappschuss) sehen. Um Ereignisprotokolle zu den Testausführungshaken anzuzeigen, gehen Sie zur Seite *Aktivität* im linken Navigationsbereich.
+
+
+
+
+
+== Erstellen Sie einen benutzerdefinierten Testsuite-Haken
+
+Sie können einen benutzerdefinierten Testsuite-Haken für eine App erstellen. Siehe link:execution-hook-examples.html["Beispiele für Testausführungshaken"^] Beispiele für Haken. Sie müssen über die Berechtigungen Eigentümer, Administrator oder Mitglied verfügen, um Testausführungshaken zu erstellen.
+
+
+NOTE: Wenn Sie ein benutzerdefiniertes Shell-Skript erstellen, das als Execution Hook verwendet werden soll, denken Sie daran, die entsprechende Shell am Anfang der Datei anzugeben, es sei denn, Sie führen linux-Befehle aus oder geben den vollständigen Pfad zu einer ausführbaren Datei an.
+
+.Schritte
+. Wählen Sie *Anwendungen* und dann den Namen einer verwalteten App aus.
+. Wählen Sie die Registerkarte *Testsuitehaschen* aus.
+. Wählen Sie *Neuen Haken hinzufügen*.
+. Wählen Sie im Bereich *Hook Details*, je nachdem, wann der Haken laufen soll, *Pre-Snapshot* oder *Post-Snapshot*.
+. Geben Sie einen eindeutigen Namen für den Haken ein.
+. (Optional) Geben Sie alle Argumente ein, um während der Ausführung an den Haken weiterzuleiten. Drücken Sie nach jedem eingegebenen Argument die Eingabetaste, um jedes Argument aufzuzeichnen.
+. Wenn der Haken im Bereich *Container Images* auf alle Container-Bilder in der Anwendung laufen soll, aktivieren Sie das Kontrollkästchen *auf alle Container-Bilder* anwenden. Sollte der Haken stattdessen nur auf ein oder mehrere angegebene Container-Images wirken, geben Sie die Container-Bildnamen in das Feld *Container-Bildnamen ein, die mit* übereinstimmen.
+. Führen Sie im Bereich *Script* einen der folgenden Schritte aus:
++
+** Laden Sie ein benutzerdefiniertes Skript hoch.
++
+... Wählen Sie die Option *Datei hochladen*.
+... Navigieren Sie zu einer Datei, und laden Sie sie hoch.
+... Geben Sie dem Skript einen eindeutigen Namen.
+... (Optional) Geben Sie alle Notizen ein, die andere Administratoren über das Skript wissen sollten.
+
+
+** Fügen Sie in ein benutzerdefiniertes Skript aus der Zwischenablage ein.
++
+... Wählen Sie die Option *aus Zwischenablage einfügen*.
+... Wählen Sie das Textfeld aus, und fügen Sie den Skripttext in das Feld ein.
+... Geben Sie dem Skript einen eindeutigen Namen.
+... (Optional) Geben Sie alle Notizen ein, die andere Administratoren über das Skript wissen sollten.
+
+
+
+
+. Wählen Sie *Haken hinzufügen*.
+
+
+
+
+== Deaktivieren Sie einen Testsuite-Haken
+
+Sie können einen Testsuite-Hook deaktivieren, wenn Sie ihn vorübergehend vor oder nach einem Snapshot einer App nicht ausführen möchten. Sie müssen über die Berechtigung Eigentümer, Administrator oder Mitglied verfügen, um Testsuiten zu deaktivieren.
+
+.Schritte
+. Wählen Sie *Anwendungen* und dann den Namen einer verwalteten App aus.
+. Wählen Sie die Registerkarte *Testsuitehaschen* aus.
+. Wählen Sie in der Spalte *Aktionen* das Menü Optionen für einen Haken, den Sie deaktivieren möchten.
+. Wählen Sie *Deaktivieren*.
+
+
+
+
+== Löschen Sie einen Testsuite-Haken
+
+Sie können einen Execution Hook ganz entfernen, wenn Sie ihn nicht mehr benötigen. Sie müssen über die Berechtigung Eigentümer, Administrator oder Mitglied verfügen, um Testausführungshaken zu löschen.
+
+.Schritte
+. Wählen Sie *Anwendungen* und dann den Namen einer verwalteten App aus.
+. Wählen Sie die Registerkarte *Testsuitehaschen* aus.
+. Wählen Sie in der Spalte *Aktionen* das Menü Optionen für einen Haken, den Sie löschen möchten.
+. Wählen Sie *Löschen*.
+

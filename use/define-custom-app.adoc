@@ -1,0 +1,61 @@
+---
+sidebar: sidebar 
+permalink: use/define-custom-app.html 
+keywords: manage app, custom app, kubernetes, astra control, astra 
+summary: Wenn Sie eine benutzerdefinierte App erstellen, können Sie Elemente Ihres Kubernetes-Clusters zu einer einzelnen App gruppieren. 
+---
+= Definieren Sie ein Beispiel für eine benutzerdefinierte Anwendung
+:hardbreaks:
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/use/
+
+
+[role="lead"]
+Wenn Sie eine benutzerdefinierte App erstellen, können Sie Elemente Ihres Kubernetes-Clusters zu einer einzelnen App gruppieren. Diese Sammlung von Kubernetes-Ressourcen basiert auf einem Namespace und einem Etikett.
+
+Eine benutzerdefinierte App bietet Ihnen mehr granulare Kontrolle darüber, was in einem Astra Control-Betrieb enthalten ist, darunter:
+
+* Klon
+* Snapshot
+* Backup
+* Sicherungsrichtlinie
+
+
+In den meisten Fällen möchten Sie die Funktionen von Astra Control in Ihrer gesamten App nutzen. Sie können jedoch auch eine benutzerdefinierte App erstellen, die diese Funktionen durch die Beschriftungen verwendet, die Sie Kubernetes-Objekten in einem Namespace zuweisen.
+
+
+NOTE: Benutzerdefinierte Applikationen können nur innerhalb eines bestimmten Namespace auf einem einzelnen Cluster erstellt werden. Astra Control bietet keine Unterstützung für eine benutzerdefinierte App, die mehrere Namespaces oder Cluster umfasst.
+
+Eine Bezeichnung ist ein Schlüssel-/Wertpaar, das Sie Kubernetes-Objekten zur Identifizierung zuweisen können. Etiketten erleichtern das Sortieren, Organisieren und Auffinden Ihrer Kubernetes-Objekte. Weitere Informationen zu Kubernetes-Labels: https://kubernetes.io/docs/concepts/overview/working-with-objects/labels/["In der offiziellen Kubernetes-Dokumentation finden Sie weitere Informationen"^].
+
+
+WARNING: Überlappende Richtlinien für dieselbe Ressource unter verschiedenen Namen können Datenkonflikte verursachen. Wenn Sie eine benutzerdefinierte App für eine Ressource erstellen, müssen Sie sicher sein, dass sie nicht unter anderen Richtlinien geklont oder gesichert wird.
+
+.Was Sie und#8217;ll benötigen
+* Astra Control ist ein Cluster
+
+
+.Schritte
+. Wählen Sie auf der Seite Apps die Option **+ Definieren** aus.
++
+Im Fenster Benutzerdefinierte App wird angezeigt, welche Ressourcen in Ihre benutzerdefinierte App aufgenommen oder von dieser ausgeschlossen werden. Dadurch können Sie sicherstellen, dass Sie die richtigen Kriterien für die Definition Ihrer benutzerdefinierten App auswählen.
+
+. Geben Sie im Popup-Fenster den App-Namen ein, wählen Sie den Cluster im Dropdown-Menü **Cluster** aus und wählen Sie den Namespace der App aus der Dropdown-Liste **Namespace** aus.
+. Wählen Sie aus der Dropdown-Liste *Label* eine Bezeichnung für die Apps und den Namespace aus.
+. Nachdem Sie die benutzerdefinierte Applikation für eine Implementierung definiert haben, wiederholen Sie den Prozess für andere Implementierungen je nach Bedarf.
+
+
+Wenn Sie die Erstellung der beiden benutzerdefinierten Apps abgeschlossen haben, können Sie diese Ressourcen wie jede andere Astra Control Anwendung behandeln. Sie können sie klonen, Backups und Snapshots erstellen und für jede Gruppe von Ressourcen auf der Basis der Kubernetes-Labels eine individuelle Sicherungsrichtlinie erstellen.
+
+
+
+== Beispiel: Separate Sicherungsrichtlinie für verschiedene Versionen
+
+In diesem Beispiel managt das devops-Team eine implementierung für kanarische Versionen. Im Cluster befinden sich drei Pods mit nginx. Zwei der Stative sind der stabilen Freisetzung gewidmet. Der dritte POD ist für den canary Release.
+
+Der Kubernetes Administrator des devops-Teams fügt das Label hinzu `deployment=stable` Zu den stabilen Entriegelungstativen. Das Team fügt das Label hinzu `deployment=canary` Zum canary Release POD.
+
+Die stabile Version des Teams umfasst eine Notwendigkeit für stündliche Snapshots und tägliche Backups. Die version von canary ist kurzlebig, deshalb wollen sie für alles, was gekennzeichnet ist, eine weniger aggressive, kurzfristige Schutzpolitik erstellen `deployment=canary`.
+
+Um mögliche Datenkonflikte zu vermeiden, erstellt der Admin zwei benutzerdefinierte Apps: Eine für die "canary"-Version und eine für die "Stable"-Version. Hierdurch werden Backups, Snapshots und Klonvorgänge für die beiden Gruppen von Kubernetes-Objekten getrennt.

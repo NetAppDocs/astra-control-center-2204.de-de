@@ -1,0 +1,42 @@
+---
+sidebar: sidebar 
+permalink: concepts/licensing.html 
+keywords: license, licensing 
+summary: Erfahren Sie, wie sich die Aktionen mit dem Astra Control Center je nach Lizenzstatus unterscheiden und wie sich Ihre Verwendung von Astra Control Center auf den Lizenzverbrauch auswirkt. 
+---
+= Lizenzierung
+:hardbreaks:
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/concepts/
+
+
+[role="lead"]
+Astra Control Center erfordert die Installation einer Lizenz, damit die vollständige App-Datenmanagement-Funktion aktiviert werden kann. Wenn Sie Astra Control Center ohne Lizenz bereitstellen, wird in der Web-UI ein Banner angezeigt, in dem Sie darauf hingewiesen werden, dass die Systemfunktionalität begrenzt ist.
+
+Für die folgenden Vorgänge ist eine gültige Lizenz erforderlich:
+
+* Managen neuer Applikationen
+* Snapshots oder Backups werden erstellt
+* Konfigurieren einer Schutzrichtlinie zur Planung von Snapshots oder Backups
+* Wiederherstellen aus einem Snapshot oder einem Backup
+* Klonen aus einem Snapshot oder aktuellem Status
+
+
+
+NOTE: Sie können ohne Lizenz ein Cluster hinzufügen, einen Bucket hinzufügen und ein Astra Data Store Storage-Backend verwalten. Sie benötigen jedoch eine gültige Astra Control Center-Lizenz für das Management von Applikationen mit Astra Data Store als Storage-Backend.
+
+
+
+== Berechnung der Lizenznutzung
+
+Wenn Sie dem Astra Control Center einen neuen Cluster hinzufügen, zählen diese nicht auf verbrauchte Lizenzen, bis mindestens eine auf dem Cluster ausgeführte Applikation vom Astra Control Center verwaltet wird. Sie können das Astra Data Store Storage-Backend auch zum Astra Control Center hinzufügen, ohne den Lizenzverbrauch zu beeinträchtigen. So können Sie ein Astra Data Store Backend von einem nicht lizenzierten Astra Control Center System aus managen.
+
+Wenn Sie eine App auf einem Cluster verwalten, sind die CPU-Einheiten des Clusters in der Berechnung des Lizenzverbrauchs des Astra Control Center enthalten.
+
+
+
+== Weitere Informationen
+
+* link:../use/update-licenses.html["Aktualisieren einer vorhandenen Lizenz"]
+
