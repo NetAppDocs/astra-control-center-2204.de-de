@@ -15,7 +15,7 @@ Sie sollten sicherstellen, dass die Voraussetzungen erfüllt sind, bevor Sie ein
 
 
 
-== Was Sie benötigen, bevor Sie ein Cluster hinzufügen
+== Was benötigen Sie vor dem Hinzufügen eines Clusters
 
 * Einer der folgenden Cluster-Typen:
 +

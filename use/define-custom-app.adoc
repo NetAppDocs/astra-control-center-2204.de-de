@@ -32,7 +32,7 @@ Eine Bezeichnung ist ein Schlüssel-/Wertpaar, das Sie Kubernetes-Objekten zur I
 
 WARNING: Überlappende Richtlinien für dieselbe Ressource unter verschiedenen Namen können Datenkonflikte verursachen. Wenn Sie eine benutzerdefinierte App für eine Ressource erstellen, müssen Sie sicher sein, dass sie nicht unter anderen Richtlinien geklont oder gesichert wird.
 
-.Was Sie und#8217;ll benötigen
+.Was Sie benötigen
 * Astra Control ist ein Cluster
 
 

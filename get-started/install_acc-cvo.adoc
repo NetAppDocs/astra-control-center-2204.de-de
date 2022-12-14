@@ -17,8 +17,8 @@ Mit einer dieser Implementierungen können Sie Applikationsdatenmanagement-Vorg�
 
 Um Astra Control Center in Amazon Web Services (AWS) und Microsoft Azure mit einem Cloud Volumes ONTAP Storage-Backend zu installieren, führen Sie je nach Cloud-Umgebung die folgenden Schritte aus.
 
-*  Astra Control Center in Amazon Web Services
-*  Astra Control Center in Microsoft Azure
+* <<Implementieren Sie Astra Control Center in Amazon Web Services>>
+* <<Implementieren Sie Astra Control Center in Microsoft Azure>>
 
 
 
@@ -120,11 +120,11 @@ Hier finden Sie eine Übersicht über die Vorgehensweise zur Installation des As
 
 Jeder dieser Schritte wird unten im Detail erklärt.
 
-.  that you have sufficient IAM permissions.
-.  a RedHat OpenShift cluster on AWS.
-.  AWS.
-.  NetApp Cloud Manager.
-.  Astra Control Center.
+. <<Stellen Sie sicher, dass Sie über ausreichende IAM-Berechtigungen verfügen>>.
+. <<Installation eines RedHat OpenShift-Clusters in AWS>>.
+. <<Konfigurieren von AWS>>.
+. <<NetApp Cloud Manager konfigurieren>>.
+. <<Installieren Sie Astra Control Center>>.
 
 
 
@@ -303,12 +303,12 @@ Hier finden Sie eine Übersicht über die Vorgehensweise zur Installation von As
 
 Jeder dieser Schritte wird unten im Detail erklärt.
 
-.  a RedHat OpenShift cluster on Azure.
-.  Azure resource groups.
-.  that you have sufficient IAM permissions.
-.  Azure.
-.  NetApp Cloud Manager.
-.  and configure Astra Control Center.
+. <<Installieren Sie einen RedHat OpenShift-Cluster auf Azure>>.
+. <<Erstellen von Azure Ressourcengruppen>>.
+. <<Stellen Sie sicher, dass Sie über ausreichende IAM-Berechtigungen verfügen>>.
+. <<Konfigurieren Sie Azure>>.
+. <<NetApp Cloud Manager konfigurieren>>.
+. <<Installation und Konfiguration des Astra Control Center>>.
 
 
 
@@ -395,6 +395,7 @@ Erstellen Sie mit Cloud Manager einen Workspace, fügen Sie einen Connector zu A
 
 Folgen Sie der Dokumentation zum Cloud Manager, um die folgenden Schritte auszuführen. Siehe https://docs.netapp.com/us-en/occm/task_getting_started_azure.html["Erste Schritte mit Cloud Manager in Azure"^].
 
+.Was Sie benötigen
 Zugriff auf das Azure Konto mit den erforderlichen IAM-Berechtigungen und -Rollen
 
 .Schritte

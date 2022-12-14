@@ -18,11 +18,11 @@ Eine Anleitung zum Managen von Storage-Back-Ends mithilfe der Astra Control API 
 Sie können die folgenden Aufgaben zur Verwaltung eines Storage-Backends ausführen:
 
 * link:../get-started/setup_overview.html#add-a-storage-backend["Fügen Sie ein Storage-Back-End hinzu"]
-*  storage backend details
-*  a storage backend
-*  a storage backend license
-*  nodes to a storage backend cluster
-*  a storage backend
+* <<Details zum Storage-Back-End>>
+* <<Unmanagement eines Storage-Backends>>
+* <<Aktualisieren einer Speicher-Backend-Lizenz>>
+* <<Fügen Sie Nodes zu einem Storage-Back-End-Cluster hinzu>>
+* <<Entfernen Sie ein Speicher-Back-End>>
 
 
 
@@ -106,7 +106,7 @@ Sie können ein nicht mehr verwendenden Storage-Back-End entfernen. Nutzen Sie d
 
 TIP: Wenn Sie ein Astra Data Store Backend entfernen, darf es nicht vom vCenter erstellt worden sein.
 
-.Was Sie und#8217;ll benötigen
+.Was Sie benötigen
 * Stellen Sie sicher, dass das Storage-Back-End nicht gemanagt wird.
 * Stellen Sie sicher, dass im Storage-Backend keine Volumes zum Astra Data Store Cluster zugeordnet sind.
 
@@ -138,7 +138,7 @@ TIP: Wenn Sie ein Astra Data Store Backend entfernen, darf es nicht vom vCenter 
 
 Sie können die Lizenz für ein Astra Data Store Storage-Backend aktualisieren, um eine größere Implementierung oder erweiterte Funktionen zu unterstützen.
 
-.Was Sie und#8217;ll benötigen
+.Was Sie benötigen
 * Ein implementierbares und gemanagtes Astra Data Store Storage-Back-End
 * Lizenzdatei von Astra Data Store (wenden Sie sich an Ihren NetApp Vertriebsmitarbeiter, um eine Lizenz für den Astra Data Store zu erwerben).
 
@@ -178,7 +178,7 @@ Wählen Sie eine Lizenz aus der Liste aus.
 
 Sie können einem Astra Data Store Cluster Nodes bis zur Anzahl der Nodes hinzufügen, die von dem für Astra Data Store installierten Lizenztyp unterstützt werden.
 
-.Was Sie und#8217;ll benötigen
+.Was Sie benötigen
 * Ein implementiertes und lizenziertes Astra Data Store Storage-Back-End
 * Sie haben das Astra Data Store Softwarepaket im Astra Control Center hinzugefügt
 * Ein oder mehrere neue Nodes, die dem Cluster hinzugefügt werden müssen

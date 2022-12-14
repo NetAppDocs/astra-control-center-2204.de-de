@@ -257,6 +257,6 @@ Astra Control Center unterstützt aktuelle Versionen von Firefox, Safari und Chr
 
 
 
-== Was kommt als Nächstes
+== Wie es weiter geht
 
 Sehen Sie sich die an link:quick-start.html["Schnellstart"] Überblick.

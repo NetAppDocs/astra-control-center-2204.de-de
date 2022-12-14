@@ -65,6 +65,7 @@ Es besteht die Notwendigkeit, die Storage-Klasse nur in folgenden Situationen zu
 
 
 
+.Ergebnis
 Dies tut Folgendes:
 
 * Erstellt einen Namespace.

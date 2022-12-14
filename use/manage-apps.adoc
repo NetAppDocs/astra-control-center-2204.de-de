@@ -69,12 +69,12 @@ Sie können die folgenden Aktivitäten zum Verwalten von Apps durchführen:
 
 * Applikationsmanagement
 +
-**  apps by namespace
-**  apps by Kubernetes label
+** <<Applikationen nach Namespace managen>>
+** <<Apps nach Kubernetes Label managen>>
 
 
-*  apps
-*  apps
+* <<Apps ignorieren>>
+* <<Das Management von Apps wird aufgehoben>>
 
 
 
@@ -123,6 +123,7 @@ NOTE: Die gerade hinzugefügte App verfügt möglicherweise über ein Warnsymbol
 . Um Details zu einer bestimmten App anzuzeigen, wählen Sie den App-Namen aus.
 
 
+.Ergebnis
 Apps, die Sie verwalten möchten, stehen jetzt auf der Registerkarte * Managed* zur Verfügung. Alle ignorierten Apps werden auf die Registerkarte *ignorierte* verschoben. Im Idealfall zeigt die Registerkarte „entdeckt“ keine Apps an, sodass neue Anwendungen leichter zu finden und zu verwalten sind.
 
 
@@ -155,6 +156,7 @@ Nachdem Sie eine Bezeichnung ausgewählt haben, wird sie im Feld *Etikett* angez
 . Wählen Sie *benutzerdefinierte Anwendung definieren*.
 
 
+.Ergebnis
 Astra Control ermöglicht das Management der App. Sie finden es jetzt auf der Registerkarte *verwaltet*.
 
 

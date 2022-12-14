@@ -15,7 +15,8 @@ Diese Seite bietet einen Überblick über die Schritte, die für den Einstieg in
 
 Probieren Sie es aus! Wenn Sie Astra Control Center ausprobieren möchten, können Sie eine 90-Tage-Evaluierungslizenz verwenden. Siehe link:../get-started/setup_overview.html#add-a-license-for-astra-control-center["Lizenzierungsinformationen"] Entsprechende Details.
 
-.<span class=„image“><img src="https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png"[] alt=„One“></span> Kubernetes-Cluster-Anforderungen prüfen
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["Eins"] Kubernetes-Cluster-Anforderungen prüfen
+[role="quick-margin-list"]
 * Astra arbeitet mit Kubernetes-Clustern mit einem in Trident konfigurierten ONTAP-Storage-Back-End oder einem Astra Data Store Storage-Backend.
 * Cluster müssen in einem ordnungsgemäßen Zustand mit mindestens drei Online-Worker-Nodes ausgeführt werden.
 * Der Cluster muss Kubernetes ausführen.
@@ -24,7 +25,8 @@ Probieren Sie es aus! Wenn Sie Astra Control Center ausprobieren möchten, könn
 [role="quick-margin-para"]
 link:../get-started/requirements.html["Erfahren Sie mehr über die Anforderungen des Astra Control Centers"].
 
-.<span class=„image“><img src="https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png"[] alt=„zwei“></span> Astra Control Center herunterladen und installieren
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["Zwei"] Laden Sie Astra Control Center herunter und installieren Sie es
+[role="quick-margin-list"]
 * Laden Sie das Astra Control Center von der herunter https://mysupport.netapp.com/site/products/all/details/astra-control-center/downloads-tab["NetApp Support Site Astra Control Center Download-Seite"^].
 * Installieren Sie Astra Control Center in Ihrer lokalen Umgebung.
 +
@@ -35,7 +37,8 @@ Optional können Sie Astra Control Center mit Red hat OperatorHub installieren.
 [role="quick-margin-para"]
 link:../get-started/install_overview.html["Erfahren Sie mehr über die Installation von Astra Control Center"].
 
-.<span class=„image“><img src="https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png"[] alt=„drei“></span> Abschließen einiger Aufgaben für die Ersteinrichtung
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["Drittens"] Führen Sie einige erste Setup-Aufgaben aus
+[role="quick-margin-list"]
 * Fügen Sie eine Lizenz hinzu.
 * Ein Kubernetes Cluster hinzufügen und Astra Control Center erkennt Details.
 * Fügen Sie eine ONTAP oder hinzu https://docs.netapp.com/us-en/astra-data-store/index.html["Astra Data Store"] Storage-Back-End:
@@ -45,13 +48,16 @@ link:../get-started/install_overview.html["Erfahren Sie mehr über die Installat
 [role="quick-margin-para"]
 link:../get-started/setup_overview.html["Erfahren Sie mehr über die Ersteinrichtung"].
 
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png["Vier"] Nutzen Sie Das Astra Control Center
 [role="quick-margin-list"]
 Nachdem Sie das Astra Control Center eingerichtet haben, können Sie folgende Schritte ausführen:
 
+[role="quick-margin-list"]
 * Eine App verwalten. link:../use/manage-apps.html["Erfahren Sie mehr über das Verwalten von Apps"].
 * Optional können Sie eine Verbindung zu NetApp Cloud Insights herstellen, um Kennzahlen zum Zustand von System, Kapazität und Durchsatz innerhalb der Astra Control Center UI anzuzeigen. link:../use/monitor-protect.html["Erfahren Sie mehr über die Verbindung mit Cloud Insights"].
 
 
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-5.png["Fünf"] Fahren Sie mit dieser Schnellstartanleitung fort
 [role="quick-margin-para"]
 link:../get-started/install_overview.html["Installieren Sie Astra Control Center"].
 
