@@ -1450,7 +1450,7 @@
 <p class="page-details">
   
     
-    <time datetime="2022-11-22 23:54:38 +0000">11/22/2022</time>
+    <time datetime="2022-12-15 15:00:37 +0000">12/15/2022</time>
     
   
 
@@ -1469,16 +1469,16 @@
 <div class="title">Aufgaben</div>
 <ul>
 <li>
-<p>a license for Astra Control Center</p>
+<p><a href="#fügen-sie-eine-lizenz-für-astra-control-center-hinzu">Fügen Sie eine Lizenz für Astra Control Center hinzu</a></p>
 </li>
 <li>
-<p>cluster</p>
+<p><a href="#cluster-hinzufügen">Cluster hinzufügen</a></p>
 </li>
 <li>
-<p>a storage backend</p>
+<p><a href="#fügen-sie-ein-storage-back-end-hinzu">Fügen Sie ein Storage-Back-End hinzu</a></p>
 </li>
 <li>
-<p>a bucket</p>
+<p><a href="#fügen-sie-einen-bucket-hinzu">Fügen Sie einen Bucket hinzu</a></p>
 </li>
 </ul>
 </div>
@@ -1524,6 +1524,7 @@ Wenn Ihre Installation die Anzahl der lizenzierten CPU-Einheiten überschreitet,
 </table>
 </div>
 <div class="paragraph">
+<div class="title">Was Sie benötigen</div>
 <p>Wenn Sie Astra Control Center von heruntergeladen <a href="https://mysupport.netapp.com/site/products/all/details/astra-control-center/downloads-tab" target="_blank" rel="noopener">"NetApp Support Website"</a>, Sie haben auch die NetApp Lizenzdatei (NLF) heruntergeladen. Stellen Sie sicher, dass Sie Zugriff auf diese Lizenzdatei haben.</p>
 </div>
 <div class="olist arabic">
@@ -1597,7 +1598,7 @@ Wir empfehlen, dass Astra Control Center den Cluster, der zuerst bereitgestellt 
 <p>Verwenden Sie die Astra Control API <code>PUT /managedClusters</code> endpunkt, und weisen Sie dem eine andere Standard-Speicherklasse zu <code>DefaultStorageClass</code> Parameter.</p>
 </li>
 <li>
-<p>Verwenden Sie die Web-UI von Astra Control, um eine andere Standard-Storage-Klasse zuzuweisen. Siehe  the default storage class.</p>
+<p>Verwenden Sie die Web-UI von Astra Control, um eine andere Standard-Storage-Klasse zuzuweisen. Siehe <a href="#ändern-der-standard-storage-klasse">Ändern der Standard-Storage-Klasse</a>.</p>
 </li>
 </ul>
 </div>
@@ -1606,7 +1607,7 @@ Wir empfehlen, dass Astra Control Center den Cluster, der zuerst bereitgestellt 
 </table>
 </div>
 <div class="ulist">
-<div class="title">Was Sie und#8217;ll benötigen</div>
+<div class="title">Was Sie benötigen</div>
 <ul>
 <li>
 <p>Bevor Sie ein Cluster hinzufügen, überprüfen und führen Sie die erforderlichen Maßnahmen durch <a href="add-cluster-reqs.html" target="_blank" rel="noopener">"Erforderliche Aufgaben"</a>.</p>
@@ -1679,6 +1680,7 @@ Sie sollten sich für einen Trident-Storage-Kurs entscheiden, der von ONTAP Stor
 </ol>
 </div>
 <div class="paragraph">
+<div class="title">Ergebnis</div>
 <p>Der Cluster wechselt in den <strong>Entdeckungs</strong>-Status und dann in <strong>running</strong>. Sie haben erfolgreich ein Kubernetes-Cluster hinzugefügt und verwalten es jetzt im Astra Control Center.</p>
 </div>
 <div class="admonitionblock important">
@@ -1705,7 +1707,7 @@ Nachdem Sie einen Cluster hinzugefügt haben, der im Astra Control Center verwal
 <p>Durch das Management von Storage-Clustern in Astra Control als Storage-Backend können Sie Verbindungen zwischen persistenten Volumes (PVS) und dem Storage-Backend sowie zusätzliche Storage-Kennzahlen abrufen.</p>
 </div>
 <div class="ulist">
-<div class="title">Was Sie&#8217;ll Bedarf an vorhandenen Astra Data Store-Bereitstellungen</div>
+<div class="title">Was Sie für bestehende Implementierungen von Astra Data Store benötigen</div>
 <ul>
 <li>
 <p>Sie haben Ihren Kubernetes-App-Cluster und das zugrunde liegende Computing-Cluster hinzugefügt.</p>
@@ -1725,7 +1727,7 @@ Nachdem Sie Ihren Kubernetes App-Cluster für Astra Data Store hinzugefügt habe
 </ul>
 </div>
 <div class="ulist">
-<div class="title">Was Sie&#8217;ll benötigen für neue Astra Data Store-Bereitstellungen</div>
+<div class="title">Was Sie für die neuen Astra Data Store Implementierungen benötigen</div>
 <ul>
 <li>
 <p>Das ist schon <a href="../use/manage-packages-acc.html">"Die Version des Installationspakets, das Sie bereitstellen möchten, hochgeladen haben"</a> Zu einem Ort, der für Astra Control zugänglich ist.</p>
@@ -1734,7 +1736,7 @@ Nachdem Sie Ihren Kubernetes App-Cluster für Astra Data Store hinzugefügt habe
 <p>Sie haben den Kubernetes-Cluster hinzugefügt, den Sie für die Implementierung verwenden möchten.</p>
 </li>
 <li>
-<p>Sie haben die hochgeladen  a license for Astra Control Center,Astra Data Store-Lizenz Für Ihre Implementierung an einen Standort, auf den Astra Control zugreifen kann.</p>
+<p>Sie haben die hochgeladen <a href="#fügen-sie-eine-lizenz-für-astra-control-center-hinzu">Astra Data Store-Lizenz</a> Für Ihre Implementierung an einen Standort, auf den Astra Control zugreifen kann.</p>
 </li>
 </ul>
 </div>
@@ -1742,10 +1744,10 @@ Nachdem Sie Ihren Kubernetes App-Cluster für Astra Data Store hinzugefügt habe
 <div class="title">Optionen</div>
 <ul>
 <li>
-<p>storage resources</p>
+<p><a href="#implementieren-von-storage-ressourcen">Implementieren von Storage-Ressourcen</a></p>
 </li>
 <li>
-<p>an existing storage backend</p>
+<p><a href="#verwenden-sie-ein-vorhandenes-storage-back-end">Verwenden Sie ein vorhandenes Storage-Back-End</a></p>
 </li>
 </ul>
 </div>
@@ -1906,6 +1908,7 @@ Erstellen Sie für jeden Node mindestens drei eindeutige Beschriftungen für den
 </ol>
 </div>
 <div class="paragraph">
+<div class="title">Ergebnis</div>
 <p>Nach erfolgreicher Installation erscheint das Backend in <code>available</code> Geben Sie in der Back-Ends-Liste zusammen mit aktiven Performance-Informationen an.</p>
 </div>
 <div class="admonitionblock note">
@@ -1997,6 +2000,7 @@ Möglicherweise müssen Sie die Seite aktualisieren, damit das Backend angezeigt
 </ol>
 </div>
 <div class="paragraph">
+<div class="title">Ergebnis</div>
 <p>Das Backend wird in angezeigt <code>available</code> Status in der Liste mit Zusammenfassungsinformationen.</p>
 </div>
 <div class="admonitionblock note">
@@ -2116,7 +2120,7 @@ Diese Option wird nicht für den ersten von Ihnen erstellten Bucket angezeigt.
 </div>
 </li>
 <li>
-<p>Mit Hinzufügen fortfahren  S3 access credentials,Anmeldeinformationen.</p>
+<p>Mit Hinzufügen fortfahren <a href="#fügen-sie-s3-zugriffsdaten-hinzu">Anmeldeinformationen</a>.</p>
 </li>
 </ol>
 </div>
