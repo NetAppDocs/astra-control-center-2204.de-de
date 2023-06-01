@@ -11,7 +11,7 @@ summary: Fügen Sie Benutzer zu Ihrem Astra Control Center-System hinzu und entf
 :imagesdir: ../media/use/
 
 
-Sie können Benutzer Ihrer Astra Control Center-Installation über die Astra Control-Benutzeroberfläche einladen, hinzufügen, entfernen und bearbeiten. Sie können die Astra Control UI oder verwenden https://docs.netapp.com/us-en/astra-automation/index.html["Die Astra Control API"^] Um Benutzer zu managen.
+Sie können Benutzer Ihrer Astra Control Center-Installation über die Astra Control-Benutzeroberfläche einladen, hinzufügen, entfernen und bearbeiten. Sie können die Astra Control UI oder verwenden https://docs.netapp.com/us-en/astra-automation-2204/index.html["Die Astra Control API"^] Um Benutzer zu managen.
 
 
 

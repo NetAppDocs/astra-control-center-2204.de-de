@@ -33,7 +33,7 @@ Ein Bucket kann sich in einem dieser Zustände befinden:
 * Entfernt: Auf den Bucket ist derzeit nicht zugegriffen werden können.
 
 
-Anweisungen zum Verwalten von Buckets mithilfe der Astra Control API finden Sie im link:https://docs.netapp.com/us-en/astra-automation/["Astra Automation und API-Informationen"^].
+Anweisungen zum Verwalten von Buckets mithilfe der Astra Control API finden Sie im link:https://docs.netapp.com/us-en/astra-automation-2204/["Astra Automation und API-Informationen"^].
 
 Sie können die folgenden Aufgaben zum Verwalten von Buckets ausführen:
 
@@ -97,7 +97,7 @@ TIP: Der erste Satz von Anmeldeinformationen, die Sie Astra Control hinzufügen,
 
 NOTE: Wenn Sie die aktiven Bucket-Anmeldedaten entfernen, finden Sie unter https://kb.netapp.com/Advice_and_Troubleshooting/Cloud_Services/Astra/Deleting_active_S3_bucket_credentials_leads_to_spurious_500_errors_reported_in_the_UI["Fehlerbehebung beim Entfernen der Bucket-Anmeldeinformationen"].
 
-Anweisungen zum Entfernen von S3-Anmeldeinformationen mithilfe der Astra Control API finden Sie im link:https://docs.netapp.com/us-en/astra-automation/["Astra Automation und API-Informationen"^].
+Anweisungen zum Entfernen von S3-Anmeldeinformationen mithilfe der Astra Control API finden Sie im link:https://docs.netapp.com/us-en/astra-automation-2204/["Astra Automation und API-Informationen"^].
 
 
 
@@ -130,5 +130,5 @@ NOTE: Astra Control stellt zunächst sicher, dass es keine Planungsrichtlinien g
 
 == Weitere Informationen
 
-* https://docs.netapp.com/us-en/astra-automation/index.html["Verwenden Sie die Astra Control API"^]
+* https://docs.netapp.com/us-en/astra-automation-2204/index.html["Verwenden Sie die Astra Control API"^]
 

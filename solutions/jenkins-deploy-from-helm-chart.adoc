@@ -15,8 +15,7 @@ So implementieren Sie Jenkins von https://bitnami.com/stack/jenkins/helm["Bitnam
 
 Jenkins ist eine validierte App für Astra Control.
 
-* https://docs.netapp.com/us-en/astra/learn/validated-vs-standard.html["Erfahren Sie im Astra Control Service den Unterschied zwischen einer validierten App und einer Standard-App"^].
-* https://docs.netapp.com/us-en/astra-control-center/concepts/validated-vs-standard.html["Erfahren Sie im Astra Control Center den Unterschied zwischen einer validierten App und einer Standard-App"^].
+* https://docs.netapp.com/us-en/astra-control-center-2204/concepts/validated-vs-standard.html#validated-apps["Erfahren Sie mehr über den Unterschied zwischen einer validierten App und einer Standard-App in Astra Control"^].
 
 
 Diese Anweisungen gelten sowohl für den Astra Control Service als auch für das Astra Control Center.

@@ -278,5 +278,5 @@ Jetzt, wo du überprüft hast, dass die Voraussetzungen erfüllt sind, bist du b
 == Weitere Informationen
 
 * https://docs.netapp.com/us-en/trident/index.html["Trident Dokumentation"^]
-* https://docs.netapp.com/us-en/astra-automation/index.html["Verwenden Sie die Astra Control API"^]
+* https://docs.netapp.com/us-en/astra-automation-2204/index.html["Verwenden Sie die Astra Control API"^]
 

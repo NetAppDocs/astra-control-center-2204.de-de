@@ -11,7 +11,7 @@ summary: Schützen Sie Ihre Applikationen, indem Sie Snapshots und Backups über
 :imagesdir: ../media/use/
 
 
-Schützen Sie Ihre Applikationen, indem Sie Snapshots und Backups über eine automatisierte Sicherungsrichtlinie oder Ad-hoc-Erstellung erstellen. Sie können die Astra UI oder verwenden https://docs.netapp.com/us-en/astra-automation/index.html["Die Astra Control API"^] Um Anwendungen zu schützen.
+Schützen Sie Ihre Applikationen, indem Sie Snapshots und Backups über eine automatisierte Sicherungsrichtlinie oder Ad-hoc-Erstellung erstellen. Sie können die Astra UI oder verwenden https://docs.netapp.com/us-en/astra-automation-2204/index.html["Die Astra Control API"^] Um Anwendungen zu schützen.
 
 
 NOTE: Wenn Sie Helm zur Implementierung von Apps verwenden, erfordert Astra Control Center Helm Version 3. Das Management und Klonen von mit Helm 3 bereitgestellten Apps (oder ein Upgrade von Helm 2 auf Helm 3) werden vollständig unterstützt. Mit Helm 2 implementierte Apps werden nicht unterstützt.
@@ -94,7 +94,7 @@ Astra Control Center erstellt ein Backup der App.
 NOTE: Wenn Ihr Netzwerk ausfällt oder ungewöhnlich langsam ist, kann es zu einer Zeit für einen Backup-Vorgang kommen. Dies führt zum Fehlschlagen der Datensicherung.
 
 
-NOTE: Es gibt keine Möglichkeit, ein ausgelaufes Backup zu stoppen. Wenn Sie das Backup löschen müssen, warten Sie, bis es abgeschlossen ist, und befolgen Sie die Anweisungen unter <<Backups löschen>>. So löschen Sie ein fehlgeschlagenes Backup: https://docs.netapp.com/us-en/astra-automation/index.html["Verwenden Sie die Astra Control API"^].
+NOTE: Es gibt keine Möglichkeit, ein ausgelaufes Backup zu stoppen. Wenn Sie das Backup löschen müssen, warten Sie, bis es abgeschlossen ist, und befolgen Sie die Anweisungen unter <<Backups löschen>>. So löschen Sie ein fehlgeschlagenes Backup: https://docs.netapp.com/us-en/astra-automation-2204/index.html["Verwenden Sie die Astra Control API"^].
 
 
 NOTE: Nach einer Datensicherungsoperation (Klonen, Backup, Restore) und einer anschließenden Anpassung des persistenten Volumes beträgt die Verzögerung bis zu zwanzig Minuten, bevor die neue Volume-Größe in der UI angezeigt wird. Der Datensicherungsvorgang ist innerhalb von Minuten erfolgreich und Sie können mit der Management Software für das Storage-Backend die Änderung der Volume-Größe bestätigen.
@@ -137,7 +137,7 @@ Astra Control Center löscht den Snapshot.
 Löschen Sie die geplanten oder On-Demand-Backups, die Sie nicht mehr benötigen.
 
 
-NOTE: Es gibt keine Möglichkeit, ein ausgelaufes Backup zu stoppen. Wenn Sie das Backup löschen müssen, warten Sie, bis es abgeschlossen ist, und befolgen Sie diese Anweisungen. So löschen Sie ein fehlgeschlagenes Backup: https://docs.netapp.com/us-en/astra-automation/index.html["Verwenden Sie die Astra Control API"^].
+NOTE: Es gibt keine Möglichkeit, ein ausgelaufes Backup zu stoppen. Wenn Sie das Backup löschen müssen, warten Sie, bis es abgeschlossen ist, und befolgen Sie diese Anweisungen. So löschen Sie ein fehlgeschlagenes Backup: https://docs.netapp.com/us-en/astra-automation-2204/index.html["Verwenden Sie die Astra Control API"^].
 
 . Wählen Sie *Anwendungen* und dann den Namen einer App aus.
 . Wählen Sie *Datenschutz*.

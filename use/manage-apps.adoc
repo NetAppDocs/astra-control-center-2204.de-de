@@ -80,7 +80,7 @@ Sie können die folgenden Aktivitäten zum Verwalten von Apps durchführen:
 
 TIP: Astra Control selbst ist keine Standard-App, sondern eine „System-App“. Sie sollten nicht versuchen, Astra Control selbst zu verwalten. Astra Control selbst wird für das Management nicht standardmäßig angezeigt. Verwenden Sie den Filter „System-Apps anzeigen“, um Systemanwendungen anzuzeigen.
 
-Anweisungen zum Verwalten von Apps mit der Astra Control API finden Sie im link:https://docs.netapp.com/us-en/astra-automation/["Astra Automation und API-Informationen"^].
+Anweisungen zum Verwalten von Apps mit der Astra Control API finden Sie im link:https://docs.netapp.com/us-en/astra-automation-2204/["Astra Automation und API-Informationen"^].
 
 
 NOTE: Nach einer Datensicherungsoperation (Klonen, Backup, Restore) und einer anschließenden Anpassung des persistenten Volumes beträgt die Verzögerung bis zu zwanzig Minuten, bevor die neue Volume-Größe in der UI angezeigt wird. Der Datensicherungsvorgang ist innerhalb von Minuten erfolgreich und Sie können mit der Management Software für das Storage-Backend die Änderung der Volume-Größe bestätigen.
@@ -211,5 +211,5 @@ TIP: Astra Control selbst ist keine Standard-App, sondern eine „System-App“.
 
 == Weitere Informationen
 
-* https://docs.netapp.com/us-en/astra-automation/index.html["Verwenden Sie die Astra Control API"^]
+* https://docs.netapp.com/us-en/astra-automation-2204/index.html["Verwenden Sie die Astra Control API"^]
 

@@ -69,8 +69,7 @@ Auf beiden Plattformen laufen dieselben Funktionen, mit Ausnahme des Storage-Bac
 
 NetApp hat einige Applikationen validiert, um die Sicherheit und Konsistenz der Snapshots und Backups zu gewährleisten.
 
-* https://docs.netapp.com/us-en/astra/learn/validated-vs-standard.html["Erfahren Sie im Astra Control Service den Unterschied zwischen einer validierten App und einer Standard-App"^].
-* https://docs.netapp.com/us-en/astra-control-center/concepts/validated-vs-standard.html["Erfahren Sie im Astra Control Center den Unterschied zwischen einer validierten App und einer Standard-App"^].
+* https://docs.netapp.com/us-en/astra-control-center-2204/concepts/validated-vs-standard.html#validated-apps["Erfahren Sie mehr über den Unterschied zwischen einer validierten App und einer Standard-App in Astra Control"^].
 
 
 Unabhängig von der Art der Applikation, die Sie mit Astra Control verwenden, sollten Sie den Backup- und Restore-Workflow immer selbst testen, um Ihre Disaster-Recovery-Anforderungen zu erfüllen.
@@ -161,7 +160,7 @@ Sie können Applikationen zu Ihrem Cluster hinzufügen. Wenn Sie auch bereits ei
 * https://docs.netapp.com/us-en/astra-control-center/index.html["Astra Control Center-Dokumentation"^]
 * https://docs.netapp.com/us-en/astra-data-store/index.html["Astra Data Store-Dokumentation"]
 * https://docs.netapp.com/us-en/trident/index.html["Astra Trident-Dokumentation"^]
-* https://docs.netapp.com/us-en/astra-automation/index.html["Verwenden Sie die Astra Control API"^]
+* https://docs.netapp.com/us-en/astra-automation-2204/index.html["Verwenden Sie die Astra Control API"^]
 * https://docs.netapp.com/us-en/cloudinsights/["Cloud Insights-Dokumentation"^]
 * https://docs.netapp.com/us-en/ontap/index.html["ONTAP-Dokumentation"^]
 

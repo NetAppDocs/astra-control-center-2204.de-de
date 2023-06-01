@@ -13,7 +13,7 @@ summary: Fügen Sie Storage für Ihre lokalen Kubernetes-Applikationen hinzu. As
 
 Durch das Management von Storage-Clustern in Astra Control als Storage-Backend können Sie Verbindungen zwischen persistenten Volumes (PVS) und dem Storage-Backend sowie zusätzliche Storage-Kennzahlen abrufen. Sie können Storage-Kapazität und -Integritätsdetails überwachen, beispielsweise die Performance, wenn Astra Control Center mit Cloud Insights verbunden ist.
 
-Eine Anleitung zum Managen von Storage-Back-Ends mithilfe der Astra Control API finden Sie im link:https://docs.netapp.com/us-en/astra-automation/["Astra Automation und API-Informationen"^].
+Eine Anleitung zum Managen von Storage-Back-Ends mithilfe der Astra Control API finden Sie im link:https://docs.netapp.com/us-en/astra-automation-2204/["Astra Automation und API-Informationen"^].
 
 Sie können die folgenden Aufgaben zur Verwaltung eines Storage-Backends ausführen:
 
@@ -215,5 +215,5 @@ Wenn Astra Data Store die während der Bereitstellung konfigurierten IP-Adressen
 
 == Weitere Informationen
 
-* https://docs.netapp.com/us-en/astra-automation/index.html["Verwenden Sie die Astra Control API"^]
+* https://docs.netapp.com/us-en/astra-automation-2204/index.html["Verwenden Sie die Astra Control API"^]
 
