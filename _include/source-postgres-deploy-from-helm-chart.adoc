@@ -6,7 +6,7 @@ Erfahren Sie, wie Sie Postgres aus dem einsetzen https://bitnami.com/stack/postg
 
 Postgres ist eine validierte App für Astra.
 
-* https://docs.netapp.com/us-en/astra-control-center-2204/concepts/validated-vs-standard.html#validated-apps["Erfahren Sie mehr über den Unterschied zwischen einer validierten App und einer Standard-App in Astra Control"^].
+* link:../concepts/validated-vs-standard.html#validated-apps["Erfahren Sie mehr über den Unterschied zwischen einer validierten App und einer Standard-App in Astra Control"^].
 
 
 Diese Anweisungen gelten sowohl für den Astra Control Service als auch für das Astra Control Center.
