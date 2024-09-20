@@ -1,0 +1,94 @@
+---
+indexpage:
+  title: Astra Control Center 22.04-Dokumentation
+  summary: Astra Control Center Software ermöglicht applikationskonsistentes Datenmanagement
+    von Kubernetes-Clustern in Ihrer lokalen Umgebung. Erstellen Sie einfach ein Backup
+    von Kubernetes-Applikationen, migrieren Sie Daten in einen anderen Cluster und
+    erstellen Sie sofort funktionsfähige Applikationsklone. Wenn Sie Kubernetes-Applikationen
+    in einer Public Cloud managen möchten, besuchen Sie die Dokumentation für Astra
+    Control Service.
+  keywords: astra control center, kubernetes, data management, cluster, cloud, on-premises,
+    2204
+  lead: Astra Control Center Software ermöglicht applikationskonsistentes Datenmanagement
+    von Kubernetes-Clustern in Ihrer lokalen Umgebung. Erstellen Sie einfach ein Backup
+    von Kubernetes-Applikationen, migrieren Sie Daten in einen anderen Cluster und
+    erstellen Sie sofort funktionsfähige Applikationsklone. Wenn Sie Kubernetes-Applikationen
+    in einer Public Cloud managen möchten, besuchen Sie die Dokumentation für Astra
+    Control Service.
+  tiles:
+  - title: Starten Sie jetzt mit Astra Control Center
+    links:
+    - title: Erfahren Sie mehr über Astra Control Center
+      url: "/concepts/intro.html"
+    - title: Was ist neu im Astra Control Center
+      url: "/release-notes/whats-new.html"
+    - title: Versionshinweise
+      url: "/release-notes/rn_overview.html"
+    - title: Probieren Sie es aus
+      url: "/get-started/setup_overview.html#add-a-license-for-astra-control-center"
+    - title: Installieren Sie Astra Control Center
+      url: "/get-started/install_acc.html"
+  - title: Nutzen Sie Das Astra Control Center
+    links:
+    - title: Konten verwalten
+      url: "/use/manage-users.html"
+    - title: Applikationsmanagement
+      url: "/use/manage-apps.html"
+    - title: Schützen von Applikationen
+      url: "/use/protect-apps.html"
+    - title: Klonen und Migrieren von Applikationen
+      url: "/use/clone-apps.html"
+  - title: Verwenden Sie die Astra Control API
+    links:
+    - title: Erste Schritte mit der Astra Control API
+      url: https://docs.netapp.com/us-en/astra-automation-2204/get-started/before_get_started.html
+    - title: API-Referenz
+      url: https://docs.netapp.com/us-en/astra-automation-2204/
+    - title: API-Workflows
+      url: https://docs.netapp.com/us-en/astra-automation-2204/workflows/workflows_before.html
+  - title: Nutzen Sie Den Astra Control Service
+    links:
+    - title: Einführung in den Astra Control Service
+      url: https://docs.netapp.com/us-en/astra/get-started/intro.html
+    - title: Was ist neu
+      url: https://docs.netapp.com/us-en/astra/release-notes/whats-new.html
+    - title: Schnellstart für den Astra Control Service
+      url: https://docs.netapp.com/us-en/astra/get-started/quick-start.html
+  - title: Nutzen Sie Den Astra Data Store
+    links:
+    - title: Einführung in Astra Data Store
+      url: https://docs.netapp.com/us-en/astra-data-store/concepts/intro.html
+    - title: Umfang dieser Version des Astra Data Store
+      url: https://docs.netapp.com/us-en/astra-data-store/release-notes/whats-new.html
+    - title: Starten Sie jetzt mit dem Astra Data Store
+      url: https://docs.netapp.com/us-en/astra-data-store/get-started/quick-start.html
+  - title: Lösungen im Überblick
+    links:
+    - title: PostgreSQL DBaaS mit Astra Control
+      url: https://cloud.netapp.com/hubfs/SB-4122-0221-PostgresSQL-DBaaS-with-Astra%20(2).pdf
+    - title: MySQL DBaaS mit Astra Control
+      url: https://cloud.netapp.com/hubfs/SB-4110-0221-MySQL-Astra%20(2).pdf
+    - title: Vereinfachung des Lifecycle Managements von Jenkins
+      url: https://cloud.netapp.com/hubfs/SB-4100-Jenkins%20(2).pdf
+  - title: Demos Tutorials
+    links:
+    - title: Implementieren Sie Jenkins
+      url: "/solutions/jenkins-deploy-from-helm-chart.html"
+    - title: Implementieren von MariaDB
+      url: "/solutions/mariadb-deploy-from-helm-chart.html"
+    - title: MySQL implementieren
+      url: "/solutions/mysql-deploy-from-helm-chart.html"
+    - title: Postgres Bereitstellen
+      url: "/solutions/postgres-deploy-from-helm-chart.html"
+  - title: Blogs Community
+    links:
+    - title: Slack-Kanal
+      url: https://netapppub.slack.com/#astra
+    - title: Astra Control Blog
+      url: https://cloud.netapp.com/blog/topic/astra
+    - title: NetApp Community
+      url: https://community.netapp.com/
+    - title: Kubernetes Hub
+      url: https://cloud.netapp.com/kubernetes-hub
+    - title: Wo Sie Hilfe erhalten
+      url: "/support/get-help.html"

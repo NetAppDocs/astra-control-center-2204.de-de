@@ -938,7 +938,6 @@
   <block id="35f3a2f7a0f2c01d03afedb95ece66ab" category="inline-link">Hochladen von NetApp authentifizierten Dateien (Anmeldung erforderlich)</block>
   <block id="1c2989d4329c8aeec5e01506816fb04e" category="list-text">Nutzung<block ref="4b0bc63f683ccbf4dcf0ba2a6a1b561f" category="inline-link-rx"></block>.</block>
   <block id="94bcffc8ff8a109a8267202d2aaa5526" category="list-text">Befestigen Sie das Paket direkt am NSS-Gehäuse.</block>
-  <block id="4345f2150d39e38a6a11ee7ee57bed28" category="list-text">Nutzen Sie die NetApp Active IQ.</block>
   <block id="4be9b50faf5ab46a9d28ac23f7713bec" category="inline-link">Hochladen einer Datei an NetApp (Anmeldung erforderlich)</block>
   <block id="3b6bf15bbdfc90c8dc6d6778808539e1" category="list-text"><block ref="3b6bf15bbdfc90c8dc6d6778808539e1" category="inline-link-rx"></block></block>
   <block id="a921a3947d243a28982ffc8a6f357d21" category="inline-link">Wie kann ich Dateien manuell auf NetApp hochladen? (Anmeldung erforderlich)</block>
@@ -1099,7 +1098,6 @@
   <block id="c3314925ef2c97256c3237a450d6f4f5" category="list-text">Trident Storage-Back-Ends mit ONTAP 9.5 und höher</block>
   <block id="5b4b1a973a4751fbfc2fda3bd9bac412" category="list-text">Astra Data Store Storage-Back-Ends</block>
   <block id="51269e2584d26b04961877ec77db6da7" category="paragraph">In einer Cloud-vernetzten Umgebung nutzt Astra Control Center erweiterte Monitoring- und Telemetriedaten mithilfe von Cloud Insights. Liegt keine Cloud Insights-Verbindung vor, ist das Monitoring und die Telemetrie nur begrenzt (7 Tage Metriken) im Astra Control Center verfügbar und wird auch über offene Messpunkte in native Kubernetes-Monitoring-Tools (wie Prometheus und Grafana) exportiert.</block>
-  <block id="ea2708b459fc0cad6936ec216bd9405e" category="paragraph">Astra Control Center ist vollständig in das AutoSupport und Active IQ Ecosystem integriert, damit Benutzer und NetApp Support Fehlerbehebungs- und Verwendungsinformationen liefern können.</block>
   <block id="26849905a5aa23f71bc18ee28e352604" category="paragraph">Sie können Astra Control Center mit einer 90-Tage-Evaluierungslizenz ausprobieren. Die Evaluierungsversion wird durch E-Mail- und Community-Optionen (Slack-Kanal) unterstützt. Zudem haben Sie über das Dashboard für den Produktsupport Zugriff auf Knowledgebase-Artikel und -Dokumentation.</block>
   <block id="b4851e92b19af0c5c82447fc0937709d" category="inline-link">Anforderungen</block>
   <block id="e63cc3795b9216d59b085bd3111a248d" category="paragraph">Um Astra Control Center zu installieren und zu verwenden, müssen Sie sicher sein<block ref="bdde32b2c988689d803729c06660acb4" category="inline-link-rx"></block>.</block>
@@ -2274,4 +2272,6 @@
   <block id="802adae5487ced22b70180d969f7750c" category="list-text">Wenn der Instanztyp nicht bereits den Mindestanforderungen für Ressourcen von Astra für Master- und Worker-Nodes entspricht, ändern Sie den Instanztyp in Azure, um die Astra-Anforderungen zu erfüllen.  Siehe <block ref="a41c664e3d2520e4c4deb907d0286272" category="inline-link-macro-rx"></block>.</block>
   <block id="4d7203e3cc3e9782de01bf1c152c7952" category="list-text"><block ref="bb1d5de9fc6b24a8ee91128103dfdee9" category="inline-link-macro-rx"></block>.</block>
   <block id="f04289013cb8b30466cb952e21a82c10" category="sidebar">Dokumentation zu Astra Control Center 22.04</block>
+  <block id="a9cf730f8ab04a5b52f1d19c74c1483c" category="paragraph">Astra Control Center ist vollständig in das Ecosystem von AutoSupport und Active IQ Digital Advisor (auch als digitaler Berater bekannt) integriert, um Benutzern und NetApp-Support Fehlerbehebungs- und Verwendungsinformationen zu bieten.</block>
+  <block id="3cf9bc07c0ae31018d3336b8f32de6c8" category="list-text">Verwenden Sie Digital Advisor.</block>
 </blocks>
